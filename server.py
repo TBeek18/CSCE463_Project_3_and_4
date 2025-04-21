@@ -34,10 +34,12 @@ while True:
     while True: #run until client disconnects or sends 'quit'
       #Receive client message
       encrypted_message = clientSocket.recv(1024)
-      if not encrypted_message or encrypted_message.decode('utf-8').lower() == "quit": #if client disconnects or sends 'quit'
+      if not encrypted_message: #if client disconnects
         break
       try:
         decrypted_message = rsa_cipher.decrypt(encrypted_message).decode('utf-8')
+        if decrypted_message.lower() == "quit":
+          break
       except ValueError:
         decrypted_message = "[Decryption Failed]"
       print(f"Received from client: {decrypted_message}")
