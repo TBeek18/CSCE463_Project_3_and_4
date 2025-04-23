@@ -115,7 +115,7 @@ def server_shutdown():
     except:
       pass
   
-  print("\nServer shut down gracefully")
+  print("\nServer shut down gracefully\n")
   os._exit(0)
 
 def main():
