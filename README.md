@@ -18,6 +18,7 @@ First, run `python server.py` in within that same directory in your terminal. Th
 terminal but in the same directory, run `python client.py`. Enter the following information:
 - Server's IP Address: `127.0.0.1`
 - Name: `yourname`
+
 In a new terminal but in the same directory, run `python client.py` and repeat the above process, putting in a different name. Once both
 clients are connected, go back to the first client that was configured, type a message, and hit Enter. This message will be sent to the
 and the server will then send it to the other client that is running. Verify that this works. 
