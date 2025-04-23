@@ -1,4 +1,4 @@
-# CSCE463_Project_3_and_4
+# CSCE463 - Project 3/4 - Secure Chat Application
 
 ## Overview
 This is a secure, real-time chat application implemented in Python using TCP sockets and Public Key Infrastructure (PKI). Messages
