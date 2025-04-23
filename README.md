@@ -11,7 +11,7 @@ signed and verified to ensure authenticity and integrity
 - All of the `.pem` files are the automatically generated RSA keys.
 
 ## Requirements
-Please navigate to the directory where the project files are stored and run `pip install pycryptodome` in the terminal.
+To interact with this application, please clone the repository to your computer. Navigate to the directory where the project files are stored and run `pip install pycryptodome` in the terminal.
 
 ## How to Run
 First, run `python server.py` within that same directory in your terminal. This will start up the server application. Then, in a new
