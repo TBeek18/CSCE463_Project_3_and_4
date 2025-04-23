@@ -74,7 +74,7 @@ def handle_client(conn, addr):
     print(f"Client {addr} error: {e}")
   finally:
     if client_name:
-      print(f"{client_name} disconnected")
+      print(f"{client_name} disconnected\n")
     if (conn, client_pub_key, client_name) in clients:
       clients.remove((conn, client_pub_key, client_name))
     conn.close()
